@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Outfit&family=Poppins&display=swap');
+:root {
+    --text-color:hsl(0, 1%, 44%);
+    --border-color:hsl(0, 0%, 86%);
+    --error: hsl(0, 100%, 67%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 750px;
+    height:600px;
+    border-radius: 10px;
+    border-bottom-right-radius: 200px;
+    position: relative;
+}
+
+.info{
+    display: flex;
+    padding: 30px;
+}
+
+.info-box {
+    padding: 15px 20px;
+}
+
+.info-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: var(--text-color);
+}
+
+.info-box input {
+    border-radius: 5px;
+    width: 145px;
+    height: 65px;
+    padding: 20px;
+    display: block;
+    font-size: 32px;
+    font-weight: 800;
+    color: black;
+    border: 1px solid var(--border-color);
+}
+
+.info-box input:focus {
+    outline: none;
+}
+
+.info-box.error label {
+    color: red;
+}
+
+.info-box.error input{
+    border: 1px solid red;
+}
+
+.info-box small{
+    visibility: hidden;
+    color: red;
+}
+.info-box.error small {
+    visibility: visible;
+}
+hr {
+    width: 70%;
+    margin-left: 50px;
+}
+
+.border {
+    background-color: hsl(259, 100%, 65%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    position: absolute;
+    right: 100px;
+    top: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 40px;
+}
+
+.text {
+    font-size: 40px;
+    font-weight: 800;
+    padding: 0px 9px;
+}
+
+.text span {
+    display: flex;
+}
+
+.text em {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.purple {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        width: 350px;
+        height:550px;
+        border-radius: 10px;
+        border-bottom-right-radius: 200px;
+        position: relative;
+        margin: auto;
+        left: auto;
+        top: auto;
+        right: auto;
+        bottom: auto;
+    }
+    
+    .info{
+        display: flex;
+        padding: 10px;
+    }
+    
+    .info-box {
+        padding: 10px 10px;
+    }
+    
+    .info-box label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: var(--text-color);
+    }
+
+    .info-box input {
+        border-radius: 5px;
+        width: 90px;
+        height: 45px;
+        padding: 10px;
+        display: block;
+        font-size: 22px;
+        font-weight: 800;
+        color: black;
+        border: 1px solid var(--border-color);
+    }
+    
+   
+.text {
+    font-size: 25px;
+    font-weight: 800;
+    padding: 0px 9px;
+}
+
+.text-box {
+    display: flex;
+    margin-top: 40px;
+    padding: 20px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 110%;
+}
+
+.text em {
+    font-size: 60px;
+    font-weight: 800;
+    margin-left: 5px;
+}
+.logo {
+    padding: 10px;
+}
+.border {
+    background-color: hsl(259, 100%, 65%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    position: absolute;
+    right: 20px;
+    top: 155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    cursor: pointer;
+}
+hr {
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.purple {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 1px;
+    margin-top: 11px;
+}
+}
